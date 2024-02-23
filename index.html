@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="logo">
-	<img src="imagens/logoric.jpg">
+	<img src="logoric.jpg">
 </div>
 <div id="menuecasa">
 	

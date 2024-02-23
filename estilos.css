@@ -362,9 +362,7 @@ background-color: #fdf3bd;
 		border-style: solid;
 	border-color: grey;
 background-color: #fdf3bd;
-		
-
-
+margin-top: 1.6%;		
 }
 #Classic_Rock_Station{
 		float: left;
@@ -372,9 +370,7 @@ background-color: #fdf3bd;
 		border-style: solid;
 	border-color: grey;
 background-color: #fdf3bd;
-		
-
-
+	margin-top: 1.6%;
 }
 #Route66{
     float: left;
@@ -382,6 +378,7 @@ background-color: #fdf3bd;
 		border-style: solid;
 	border-color: grey;
 background-color: #fdf3bd;
+	margin-top: 1.6%;
 }
 #Decade60s{
     float: left;

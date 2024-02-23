@@ -119,7 +119,7 @@ a{
 }
 #capafilmes{
 	
-margin-top: 2%;
+
 }
 
 #capafilmes img{
@@ -129,7 +129,7 @@ margin-top: 2%;
 	float: left;
 }
 #capalivros{
-	margin-top: 2%;}
+	}
 #capalivros img{
 	margin-left: 3.2%;
 	border-style: solid;
@@ -139,6 +139,7 @@ margin-top: 2%;
 }
 
 #capamusicas img{
+	margin-top: 2%;
 	margin-left: 3.2%;
 	border-style: solid;
 	border-color: grey;

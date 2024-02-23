@@ -142,12 +142,14 @@ margin-top: 2%;
 margin-top: 2%;
 }
 
-#capafilmes img{
+#capamusicas img{
 	margin-left: 4%;
 	border-style: solid;
 	border-color: grey;
 	float: left;
 }
+
+
 #caparadios img{
 	margin-left: 4%;
 	margin-top: 2%;

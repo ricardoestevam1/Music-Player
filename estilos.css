@@ -117,20 +117,18 @@ a{
 	height: 100%;
 	
 }
-#capafilmes{
-	
 
-}
 
 #capafilmes img{
+	margin-top: 1%;
 	margin-left: 3.2%;
 	border-style: solid;
 	border-color: grey;
 	float: left;
 }
-#capalivros{
-	}
+
 #capalivros img{
+	margin-top: 1%;
 	margin-left: 3.2%;
 	border-style: solid;
 	border-color: grey;
@@ -139,7 +137,7 @@ a{
 }
 
 #capamusicas img{
-	margin-top: 2%;
+	margin-top: 1%;
 	margin-left: 3.2%;
 	border-style: solid;
 	border-color: grey;
@@ -150,7 +148,7 @@ a{
 
 #caparadios img{
 	margin-left: 3.2%;
-	margin-top: 2%;
+	margin-top: 1%;
 	border-style: solid;
 	border-color: grey;
 	float: left;
@@ -159,7 +157,7 @@ a{
 
 #capavideos img{
 	margin-left: 3.2%;
-	margin-top: 2%;
+margin-top: 1%;
 	border-style: solid;
 	border-color: grey;
 	float: left;

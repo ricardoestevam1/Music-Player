@@ -1,0 +1,1120 @@
+body{
+	width: 100%;
+	background-color: #fdf3bd;
+
+}
+
+ul{
+	border-style: solid;
+	border-size:1px;
+
+	font-size: 0px;
+	text-align: center;
+	list-style-type: none;
+  margin-right: -20px;
+  padding-right: -20px;
+}
+ul li{
+	border-style: solid;
+	border-size:0.3px;
+font-size: 24px;
+  list-style-type: none;
+  margin-left: -40px;
+  background-color: white;
+}
+
+a{
+	font-size: 20px;
+}
+
+#logo img{
+	width: 100%;
+}
+#logofilmes img{
+	width: 100%;
+}
+#logoficcao img{
+	width: 100%;
+}
+#logoradios img{
+	width: 100%;
+}
+#logovideos img{
+	width: 100%;
+}
+#menuecasa{
+	
+	float: left;
+	width: 20%;
+	height: 1000px;
+	
+
+}
+#menuecasa img{
+	width: 100%;
+}
+#menuecasafilmes{
+	
+	float: left;
+	width: 17%;
+	height: 1000px;
+	
+
+}
+#menuecasafilmes img{
+	
+	width: 100%;
+
+}
+#menuecasaradios{
+	
+	float: left;
+	width: 17%;
+	height: 1000px;
+	
+
+}
+#menuecasaradios img{
+	
+	width: 100%;
+
+}
+#menuecasaficcao{
+	
+	float: left;
+	width: 17%;
+	height: 1000px;
+	
+}
+#menuecasaficcao img{
+	width: 100%;
+}
+#menuficcao{
+	float: left;
+	width: 18%;
+}
+
+
+#menuecasamusicasric{
+	
+	float: left;
+	width: 17%;
+	height: 1000px;
+	
+}
+#menuecasamusicasric img{
+	width: 100%;
+}
+#menumusicasric{
+	float: left;
+	width: 18%;
+}
+
+
+#capas{
+	width: 100%;
+	float: top;	
+	
+}
+#capafilmes{
+	
+
+}
+
+#capafilmes img{
+	margin-left: 4%;
+	border-style: solid;
+	border-color: grey;
+	float: left;
+}
+#capalivros img{
+	margin-left: 1.6%;
+	border-style: solid;
+	border-color: grey;
+	float: left;
+}
+#capamusicas img{
+	margin-left: 4%;
+		margin-top: 2%;
+
+	border-style: solid;
+	border-color: grey;
+	float: left;
+}
+#caparadios img{
+	margin-left: 1.6%;
+	margin-top: 2%;
+	border-style: solid;
+	border-color: grey;
+	float: left;
+
+}
+
+#capavideos img{
+	margin-left: 4%;
+	margin-top: 2%;
+	border-style: solid;
+	border-color: grey;
+	float: left;
+
+}
+
+#inicio{
+	
+	
+	
+}
+
+
+#meio{
+	width: 80%;
+
+background-color: #feec71;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
+}
+#meio img{
+	width: 248px;
+height: 288px;
+padding: 10px;
+
+}
+#meioradios{
+	width: 80%;
+
+background-color: #feec71;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
+}
+#meioradios img{
+	width: 248px;
+height: 288px;
+padding: 10px;
+
+}
+#meiomusicas{
+	width: 80%;
+
+background-color: #feec71;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
+}
+#meiomusicas img{
+	width: 248px;
+height: 288px;
+padding: 10px;
+
+}
+
+#meioteste{
+
+	width: 80%;
+
+background-color: green;
+display : inline-flex;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
+}
+#meioteste img{
+	width: 248px;
+height: 288px;
+padding: 10px;
+
+}
+
+#Garoto{
+	float: left;
+	margin-left: 10%;
+	border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;}
+
+#Prometheus{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+		
+
+
+}
+#Alem{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+				margin-top: 1.6%;
+
+
+}
+#Soldados{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+background-color: #fdf3bd;
+			margin-top: 1.6%;
+
+}
+#Rastros{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+background-color: #fdf3bd;
+			margin-top: 1.6%;
+
+}
+#Jogo{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+background-color: #fdf3bd;
+			margin-top: 1.6%;
+
+}
+
+#Darken{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+background-color: #fdf3bd;
+			margin-top: 1.6%;
+
+}
+#Lapso{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+background-color: #fdf3bd;
+			margin-top: 1.6%;
+
+}
+#Nomesinicio{
+	display: inline-block;
+	margin-top: 100px;
+	width: 100%;
+	
+}
+
+#linha1{
+	width: 100%;
+	display: inline;
+	float: left;
+	margin-left: 10.5%;
+}
+#linha2{
+	width: 100%;
+	display: inline;
+	float: left;
+	margin-left: 10.5%;
+}
+
+#Cleusainicio{
+	float: left;
+	width: 30%
+
+}
+#Ericinicio{
+	float: left;
+	width: 30%
+	
+}
+#Ricardoinicio{
+	float: left;
+	width: 30%
+}
+#Silviainicio{
+	float: left;
+	width: 30%
+}
+#Vandairinicio{
+	float: left;
+	width: 30%
+
+}
+
+#Convidadoinicio{
+	float: left;
+}
+
+#meioradios{
+    float: left;
+}
+
+#CantodeRock{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+		
+
+
+}
+#Classic_Rock_Station{
+		float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+		
+
+
+}
+#Route66{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+}
+#Rockradio60{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#Radioeletrica{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+
+#wrw{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#FMCultura{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#centoedois{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+
+#Imembui{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#NativaFM{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#Capao{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#Grenal{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#Gaucha{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#Brasileiras{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 4%;
+margin-bottom: 9%;
+
+}
+#Internacionais{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 4%;
+margin-bottom: 9%;
+}
+#Belchior{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+}
+#Brasileiras1{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+}
+#Brasileiras2{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Brasileiras3{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Brasileiras4{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#DingoBells{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#JorgeBen{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#LegiaoUrbana{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#MiltonNascimento{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#RaulSeixas{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#TimBernardes{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#OTerno{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Antigas{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+
+}
+
+#BlackCrowes{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+}
+
+#JohnLennon{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+
+#Nazareth{
+     float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#PaulMcCartney{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Railroadearth{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#RodStewart{
+     float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Rock{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#StringCheeseIncident{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#TeaLeafGreen{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#YounderMountainStringBand{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#WidespreadPanic{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#WishboneAsh{
+      float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+
+#pastacaps1a10livroidc{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#pastacaps11a20livroidc{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;
+}
+#pastacaps21a30livroidc{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;
+}
+#pastacaps31a40livroidc{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;
+}
+#pastacaps41a50livroidc{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;
+}
+#pastacaps51aepilogolivroidc{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;
+}
+#cap1{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap2{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap3{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap4{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap5{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap6{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap7{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap8{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap9{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap10{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+
+
+#capalink{
+    width:100%;
+}
+
+#cap11{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap12{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap13{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap14{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap15{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap16{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap17{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap18{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap19{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#cap20{
+float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 10%;    
+}
+#menuecasavideos{
+	
+	float: left;
+	width: 17%;
+	height: 1000px;
+	
+
+}
+#menuecasavideos img{
+	
+	width: 100%;
+
+}
+#meiovideos{
+	width: 80%;
+
+background-color: #feec71;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
+}
+#meiovideos img{
+	width: 248px;
+height: 288px;
+padding: 10px;
+
+}
+#Teoriasdapersonalidade{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Teoriaspsicodinamicas{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Teoriashumanistasexistenciais{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Teoriasdisposicionais{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Teoriasbiologicasevolucionistas{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Teoriascognitivistasedeaprendizagem{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Psicanalise{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}#Psicologiaindividual{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}#Psicologiaanalitica{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}#Teoriadasrelacoesobjetais{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}#Teoriasocialpsicanalitica{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Psicanalisehumanista{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#Teoriaposfreudiana{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#freud1{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#freud2{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#freud3{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#freud4{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#freud5{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#freud6{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Adler1{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#Adler2{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}

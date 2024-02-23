@@ -200,7 +200,15 @@ padding: 10px;
 
 }
 #meiomusicas{
-float: left;
+	width: 80%;
+
+background-color: #feec71;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
 }
 #meiomusicas img{
 	width: 248px;

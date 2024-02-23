@@ -137,16 +137,14 @@ margin-top: 2%;
 	float: left;
 	
 }
-#capamusicas{
-	
-margin-top: 2%;
-}
 
 #capamusicas img{
 	margin-left: 4%;
+	margin-top: 2%;
 	border-style: solid;
 	border-color: grey;
 	float: left;
+
 }
 
 

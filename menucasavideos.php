@@ -1,4 +1,4 @@
-<?php
+
 
 <div id="menuecasavideos">
 	
@@ -19,4 +19,3 @@
 	<a href="index.html"><img src="inicio.png"></a>
 </div>
 </div>
-?>

@@ -1061,4 +1061,27 @@ margin-left: 0%;
 
 margin-left: 0%;
 }
-
+#culinariacarnes1{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#culinariacarnes2{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}
+#culinariacarnes3{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+}

@@ -1045,21 +1045,41 @@ margin-left: 0%;
 margin-left: 0%;
 }
 	
-#videosTeoriaspsicodinâmicas{
+#culinariacarnes{
 	background-color: #feec71;
 
 margin-left: 0%;
 }
-#Teoriasdapersonalidade{
+#culinariacharcutaria{
 	background-color: #feec71;
 
 margin-left: 0%;
 }
 
-#Psicologiaindividual{
+#culinariapaes{
 	background-color: #feec71;
 
 margin-left: 0%;
+}
+#culinariasalgados{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
+}
+#culinariasobremesas{
+    float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
+	
+		
 }
 
 

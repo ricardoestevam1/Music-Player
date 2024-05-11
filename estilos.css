@@ -1068,14 +1068,8 @@ margin-left: 0%;
 	border-color: grey;
 background-color: #fdf3bd;
 	margin-top: 1.6%;
-}#culinariacharcutaria{
-	float: left;
-		margin-left: 10%;
-		border-style: solid;
-	border-color: grey;
-background-color: #fdf3bd;
-	margin-top: 1.6%;
-}#culinariapaes{
+}
+#culinariacharcutaria{
 	float: left;
 		margin-left: 10%;
 		border-style: solid;
@@ -1083,7 +1077,7 @@ background-color: #fdf3bd;
 background-color: #fdf3bd;
 	margin-top: 1.6%;
 }
-}#culinariasalgados{
+#culinariapaes{
 	float: left;
 		margin-left: 10%;
 		border-style: solid;
@@ -1091,7 +1085,17 @@ background-color: #fdf3bd;
 background-color: #fdf3bd;
 	margin-top: 1.6%;
 }
-}#culinariasobremesas{
+
+
+#culinariasalgados{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#culinariasobremesas{
 	float: left;
 		margin-left: 10%;
 		border-style: solid;

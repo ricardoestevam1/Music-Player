@@ -23,9 +23,11 @@
 <div id="meiovideos">
 
 <div id="Teoriasdapersonalidade">
-<a href='Teoriasdapersonalidade.php'><img src="imagens/Psicologia.png"></br>Teorias da Personalidade</a>
+<a href='Teoriasdapersonalidade.php'<img src="imagens/Psicologia.png"></br>Teorias da Personalidade</a>
 </div>
-
+<div id="Teoriasdapersonalidade">
+<a href='humanidade.html'><img src="humanidade.jpg"></br>Humanidade </br>A História de</br>Todos Nós</a>
+</div>
 </div>
 
 

@@ -1046,20 +1046,29 @@ margin-left: 0%;
 }
 	
 #culinariacarnes{
-	background-color: #feec71;
-
-margin-left: 0%;
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
 }
 #culinariacharcutaria{
-	background-color: #feec71;
-
-margin-left: 0%;
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
 }
 
 #culinariapaes{
-	background-color: #feec71;
-
-margin-left: 0%;
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+margin-top: 1.6%;
 }
 #culinariasalgados{
     float: left;

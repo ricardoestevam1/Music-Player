@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+		<link rel="stylesheet" type="text/css" >
+
+
+	<style>
+#Videosric {
+    
+background-color: #feec71;
+
+} 
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Vídeos</title>
+</head>
+
+
+	
+
+
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+<body>
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logovideos.png">
+</div>
+	
+<div w3-include-html="contentvideoshumanidade.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+	
+
+	
+	
+<div id="meiovideos">
+
+<div id="humanidade1">
+<a href='https://www.dailymotion.com/video/x2a53ti?playlist=x3hj2w'><img src="Inventores.jpg"></br></br>Episódio 01 - Inventores</a>
+</div>
+<div id="humanidade2">
+<a href='https://www.dailymotion.com/video/x2a839w?playlist=x3hj2w'><img src="Homensdeferro.jpg"></br></br>Episódio 02 - Homens de Ferro</a>
+</div>
+<div id="humanidade3">
+<a href='https://www.dailymotion.com/video/x2a83af?playlist=x3hj2w'><img src="Impérios.jpg"></br></br>Episódio 03 - Impérios</a>
+</div>
+<div id="humanidade4">
+<a href='https://www.dailymotion.com/video/x2a83bk?playlist=x3hj2w'><img src="Guerreiros.jpg"></br></br>Episódio 04 - Guerreiros</a>
+</div>
+<div id="humanidade5">
+<a href='https://www.dailymotion.com/video/x2a86k3?playlist=x3hj2w'><img src="Peste.jpg"></br></br>Episódio 05 - Peste</a>
+</div>
+<div id="humanidade6">
+<a href='https://www.dailymotion.com/video/x2a88qo?playlist=x3hj2w'><img src="Sobreviventes.jpg"></br></br>Episódio 06 - Sobreviventes</a>
+</div>
+<div id="humanidade7">
+<a href='https://www.dailymotion.com/video/x2amjco?playlist=x3hj2w'><img src="Novomundo.jpg"></br></br>Episódio 07 - Novo Mundo</a>
+</div>
+<div id="humanidade8">
+<a href='https://www.dailymotion.com/video/x2amjdd?playlist=x3hj2w'><img src="Tesouro.jpg"></br></br>Episódio 08 - Tesouro</a>
+</div>
+<div id="humanidade9">
+<a href='https://www.dailymotion.com/video/x2arwda?playlist=x3hj2w'><img src="Pioneiros.jpg"></br></br>Episódio 09 - Pioneiros</a>
+</div>
+<div id="humanidade10">
+<a href='https://www.dailymotion.com/video/x2aohjs?playlist=x3hj2w'><img src="Revolucoes.jpg"></br></br>Episódio 10 - Revoluções</a>
+</div>
+<div id="humanidade11">
+<a href='https://www.dailymotion.com/video/x2bdpia?playlist=x3hj2w'><img src="Velocidade.jpg"></br></br>Episódio 11 - Velocidade</a>
+</div>
+<div id="humanidade12">
+<a href='https://www.dailymotion.com/video/x2bdpj7?playlist=x3hj2w'><img src="Novasfronteiras.jpg"></br></br>Episódio 12 - Novas Fronteiras</a>
+</div>
+
+</div>
+
+
+</body>
+</html>

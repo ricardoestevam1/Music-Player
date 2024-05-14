@@ -1,45 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	
+		<link rel="stylesheet" type="text/css" >
+   <style>
 
-	<style>
-h{
+   body{
+   	  font-size: 120%;
+   }
+
+
+#titulo1{
 text-align: center;
 		}
-p{
-	text-align: justify;
+#p1{
+
+	width: 100%;
+	
 }
 
+	   #titulo1{
+		   font-size: 140%;
+
+	   }
+
+
+	   #paragrafoum{
+		   width: 75%;
+		   	margin-left: 100px;
+		   	float: left;
+	   }
+#livroze{
+text-align: center;
+
+}
+	   #abordagemestoica{
+		   text-align: center;
+		   	float: left;
+	   }
+	    #youtube{
+		
+		    text-align: center;
+	   }
+	      #slides{
+		   width: 75%;
+		   	margin-left: 100px;
+		   	float: left;;
+	   }
+	        #capitulo{
+		   width: 75%;
+		   	margin-left: 100px;
+		   	float: left;
+	   }
+	     #podcast{
+	   width: 75%;
+		   	margin-left: 100px;
+		   	float: left;
+	   }
 	</style>
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Distorções Cognitivas</title>
 </head>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
 <body>
 
-<h>Distorções Cognitivas</h>
+	
+		<div id="logovideos">
+	<img src="logopsicologia.jpg">
+</div>
+	
+<div w3-include-html="contentpsicologiadistorcoescognitivas.html" ></div>
+<script>
+includeHTML();
+</script>
 
-<p> &nbsp; &nbsp; &nbsp;O Vídeo abaixo mostra uma abordagem estóica em relação aos pensametos negativos, e se torna bastante pertinente para quem quer mudar seu comportamento em relação às cognições distorcidas da realidade e obter uma melhor qualidade de vida.</p>
 
 
+
+
+	
+</head>
+<body></br></br>
+
+<div id="paragrafoum">
+	<div id="titulo1">
+<b><h  >Distorções Cognitivas</h></b></div>
+</br>
+</br>
+<div id="p1">
+
+<p text-align="justify" > &nbsp; &nbsp; &nbsp;O Vídeo abaixo mostra uma abordagem estóica em relação aos pensametos negativos, e se torna bastante pertinente para quem quer mudar seu comportamento em relação às cognições distorcidas da realidade e obter uma melhor qualidade de vida.</p>
+</div>
+</div></br>
+<div id="youtube">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nFJslMla4NQ?si=5rAnrHbtlDWTHwla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p> &nbsp; &nbsp; &nbsp;À seguir uma composição de slides abordando algumas distorções cognitivas</p>
-
+</div>
+</br></br></br>
+	<div id="slides">
+<p  text-align="justify" > &nbsp; &nbsp; &nbsp;À seguir uma composição de slides abordando algumas distorções cognitivas</p>
+</div></br></br></br>
 <div id="livroze">
 <iframe src="Dr._Claudio_Moraga_-_Distorsoes_Cognitivas.pdf" width="1080" height="659" style="border: none;"></iframe>
 </div>
+</br></br></br>
+<div id="capitulo">
 
-
-<p>Á seguir um capítulo do livro "Teoria Cognitiva Comportamental para Leigos" que bem descreve algumas distorções cognitivas</p>
-
+<p>Em seguida um capítulo do livro "Teoria Cognitiva Comportamental para Leigos" que bem descreve algumas distorções cognitivas</p>
+</div>
+</br></br></br>
 <div id="livroze">
 <iframe src="TCCparaleigos.pdf" width="1080" height="659" style="border: none;"></iframe>
 </div>
+<div id="podcast">
+	</br></br></br>
 
-<p>Á seguir um podcast que aborda uma quantidade maior de distorções cognitivas</p>
+</br>
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3OXKTkBIyZX5oShFPbgcQU?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p>Abaixo um rápido podcast com uma abordagem bastante abrangente sobre o tema</p>
+
+</br>
 
 
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3OXKTkBIyZX5oShFPbgcQU?utm_source=generator" width="75%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</div>
 
 
 

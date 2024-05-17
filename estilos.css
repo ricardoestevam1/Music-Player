@@ -1101,3 +1101,28 @@ background-color: #fdf3bd;
 background-color: #fdf3bd;
 	margin-top: 1.6%;
 }
+
+#frangoassado{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#linguicaassada{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}
+#quibe{
+	float: left;
+		margin-left: 10%;
+		border-style: solid;
+	border-color: grey;
+background-color: #fdf3bd;
+	margin-top: 1.6%;
+}

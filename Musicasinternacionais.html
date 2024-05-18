@@ -1,68 +1,83 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <html lang="pt-br">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+		<link rel="stylesheet" type="text/css" >
+
+
+	<style>
+#canaiscontent {
+    
+background-color: #feec71;
+
+} 
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Musicas Internacionais</title>
+</head>
+
+
 	
 
 
-	<title>Músicas Internacionais</title>
-</head>
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logomusicas.jpg">
+</div>
+	
+<div w3-include-html="contentmusicasinternacionais.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+
+
+
 <body>
 		<div id="logo">
 	<img src="logomusicasinternacionais.png">
 </div>
-<div id="menuecasamusicasric">
-	
-	
-<ul>
-	<li><a href="Filmesric.html">Filmes</a></li>
 
-	<li><a href="Livrosric.html">Livros</a></li>
-	<li><div id="videosTeoriaspsicodinâmicas"><a href="Musicasric.html">Músicas</a></li>
-	
-<li><a href="Musicasbrasileiras.html">Brasileiras</a></li>
-	<li><div id="videosTeoriaspsicodinâmicas"><a href="Musicasinternacionais.html">Internacionais</a></li>
-	
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJCrEMeYWtP9MYf3E1heAfl8">Antigas</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJAgvHa8AkH5bn2VBrI-6CNY">Antigas 2</a></li>
-<li><a href="https://www.youtube.com/watch?v=amGI5T0JGDc&list=PLJ9Z7bc9hKJDSkD_DO7g1oNtkT0dcZjzL&index=8">Bob Marley</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJAZq4jJgmSbd4TzsQ307bRo">Blues 1</a></li>
-<li><a href="https://ricardoestdeandrad.wixsite.com/ricardo">Eric Clapton</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJDtS4aGzd-ekBdrCjU2LZVk">George Harrisson</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJBFevDXz5PIKWtd531ZSe-U">John Lennon</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJCsvV6GSFOecKHJmrYzDAhp">Lou Reed</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJAYSNqjeLdu1DF2n6rOiLCY">New Wave</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJBrFeKxXQfhVy8-uTN-tjbB">Paul McCartney</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJAlZM_W0h-yLtqaxLn85KBF">Railroad Earth</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJCqpWgaxIArj4LEa-hxAWMA">Rod Stewart</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJBKvgqA4iZlfBn1bvJk7DLC">Rock 1</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJBuFipv8Mm3P67zVochD42b">Rush</a></li>
-<li><a href="Musicasinternacionais.html">String Cheese Incident</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJCKVoyAffNiuu_SsNwJqb17">Taj Mahal</a></li>
-<li><a href="Musicasinternacionais.html">Tea Leaf Green</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLJ9Z7bc9hKJDt7DtQbn__P3weSoKspMFa">Tedeschi Trucks Band</a></li>
-<li><a href="https://www.youtube.com/watch?v=yds77TQFfdE&list=PLJ9Z7bc9hKJBU1EAC7tq9fESOL7kTg4tH">The Blues and Gospel Train</a></li>
-<li><a href="https://www.youtube.com/playlist?list=OLAK5uy_lxjiOMWISGcoJlRE4f6C9FI9aTLwDBCw8">The Yardbirds</a></li>
-<li><a href="Musicasinternacionais.html">Younder Mountain String Band</a></li>
-<li><a href="Musicasinternacionais.html">Widespread Panic</a></li>
-
-
-	<li><a href="Radiosric.html">Rádios</a></li>
-	<li><a href="Videosric.html">Videos</a></li>	
-			
-
-	
-</ul>	
-	<div id="inicio">
-	<a href="index.html"><img src="inicio.png"></a>
-</div>
-</div>
 <div id="meiomusicas">
 
 <div id="Antigas">

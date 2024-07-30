@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+		<link rel="stylesheet" type="text/css" >
+
+
+	<style>
+
+    #Culinaria {
+    
+background-color: #feec71;
+
+} 
+#culinariacarnescontent {
+    
+background-color: #feec71;
+
+} 
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Culinária - Carnes</title>
+</head>
+
+
+	
+
+
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+<body>
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logocarnes.jpg">
+</div>
+	
+<div w3-include-html="contentculinariacarnes.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+	
+
+	
+	
+<div id="meiovideos">
+
+<div id="frangoassado"><a href="https://www.youtube.com/watch?v=_6snkrolMvk"><img width="290" height="290" src="http://i.ytimg.com/vi/_6snkrolMvk/hqdefault.jpg"></br>Frango Assado Inteiro</br> na Air Fryer</a></div>
+<div id="linguicaassada"><a href="https://www.youtube.com/watch?v=Ykv3dGf4VvE"><img width="290" height="290"  src="http://i.ytimg.com/vi/Ykv3dGf4VvE/hqdefault.jpg"></br>Linguiça Assada</br> na Airfryer</a></div>
+<div id="batatarustica"><a href="https://www.youtube.com/watch?v=eMHFM0FwOb8&t=191s"><img width="290" height="290"  src="http://i.ytimg.com/vi/eMHFM0FwOb8&t/hqdefault.jpg"></br></br>Batata Rústica </a></div>
+  
+</div>
+
+
+</body>
+</html>

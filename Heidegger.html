@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta charset="utf-8">
+
+
+
+	<style>
+#Teoriaspsicodinâmicas {
+    
+background-color: #feec71;
+
+} 
+		#Teorias {
+    
+background-color: #feec71;
+
+} 
+
+		#p2 {
+    
+background-color: #feec71;
+
+} 
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Heidegger</title>
+</head>
+
+
+
+
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logofilosofia.png">
+</div>
+	
+<div w3-include-html="contentfilosofia.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+	
+
+
+
+<div id="meiovideos">
+
+<div id="SeretempoI">
+<a href='https://bibliotecaonlinedahisfj.wordpress.com/wp-content/uploads/2015/02/heidegger-martin-ser-e-tempo-parte-i.pdf'><img src="SeretempoI.jpg">Ser e Tempo - parte I</a>
+</div>
+<div id="SeretempoII">
+<a href='https://bibliotecaonlinedahisfj.wordpress.com/wp-content/uploads/2015/02/heidegger-martin-ser-e-tempo-parte-ii.pdf'><img src="SeretempoII.jpg">Ser e Tempo - parte II</a>
+</div>
+<div id="conceitodeexistencia">
+<a href='conceitodeexistencia.html'><img src="conceitodeexistencia.jpg">O Conceito de Existência</br>em Ser e Tempo</a>
+</div>
+<div id="Heideggerospensadores">
+<a href='https://joaocamillopenna.wordpress.com/wp-content/uploads/2013/08/os-pensadores-heidegger.pdf'><img src="Heideggerospensadores.jpg">Heidegger</br>Coleção</br>Os Pensadores</a>
+</div>
+
+
+
+
+</div>
+</body>
+</html>

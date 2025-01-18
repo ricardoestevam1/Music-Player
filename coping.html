@@ -1,50 +1,105 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+
+	<head>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<meta charset="utf-8">
-</head>	
 
-
-
-<div id="menuecasavideos">
 	
-<ul>
+		
+
+<style>
+
+	.psicologia {
+    
+background-color: #feec71;
+
+} 
+#copingcontent {
+    
+background-color: #feec71;
+
+} 
+</style>
+
+	<meta charset="utf-8">
+
+
+	<title>Coping</title>
+</head>
+
+
 	
-<li><a href="Budismoric.html">Budismo</a></li>	
-	<li><a href="Canaisric.html">Canais</a></li>
-	<li><div id="Culinaria"><a href="Culinaria.html">Culinária</a></li>
-	<li><a href="Filmesric.html">Filmes</a></li>
-		<li><a href="Filosofiaric.html">Filosofia</a></li>
-	<li><a href="Livrosric.html">Livros</a></li>
+
+
 	
 
+	
 
-	<li><a href="Musicasric.html">Músicas</a></li>
-	<li><div class="psicologia"><a href="Psicologiaric.html">Psicologia</a></li>
-	<li><div id="copingcontent"><a href="coping.html">Coping</a></li>
-
-			<li><div id="conceitodecoping"><a href="conceitodecoping.html">O Conceito de Coping</a></li>
-	<li><div id="estcopingadolescentes"><a href="estcopingadolescentes.html">Estratégias </br>de Coping </br>entre adolescentes</a></li>
-			
-			
-	<li><div id="adaptacaodoinventario"><a href="adaptacaodoinventario.html">Adaptação do inventário</br> de estratégias de </br>coping para o português</a></li>
-				<li><div id="modelocoping"><a href="modelocoping.html">O Modelo </br>de Coping de</br> Folkman e Lazarus:</a></li>
-						<li><div id="copingestressadloescente"><a href="copingestressadloescente.html">Estratégias de coping</br> e sintomas de stress </br>na adolescência</a></li>
-
-			
-				
-	<li><a href="Radiosric.html">Rádios</a></li>
-		<li><a href="Sériesric.html">Séries</a></li>
-	<li><a href="Videosric.html">Videos</a></li>	
-			
-</ul>
-
-	<div id="inicio">
-	<a href="index.html"><img src="inicio.png"></a>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+<body>
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logopsicologia.jpg">
 </div>
-	</div>
+	
+<div w3-include-html="contentpsicologiacoping.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+	
+
+	
+
+
+<div id="conceitodecoping"><a href="conceitodecoping.html"><img src= "conceitodecoping.png"></br></br></br>O Conceito de Coping</a>
+</div>
+
+<div id="estcopingadolescentes"><a href="estcopingadolescentes.html"><img src="estcopingadolescentes.png"></br>Estratégias de Coping </br>entre adolescentes</a>
+</div>
+	
+	<div id="adaptacaodoinventario"><a href="adaptacaodoinventario.html"><img src="adaptacaodoinventario.png"></br>Adaptação do inventário</br> de estratégias de </br>coping para o português</a>
+</div>
+
+<div id="modelocoping"><a href="modelocoping.html"><img src="modelocoping.png"></br></br>O Modelo </br>de Coping de</br> Folkman e Lazarus</a>
+</div>  
+
+<div id="copingestressadloescente"><a href="copingestressadloescente.html"><img src="copingestressadloescente.png"></br></br>Estratégias de coping</br> e sintomas de stress</a>
+</div>  
+
+</body>
 </html>
-
-

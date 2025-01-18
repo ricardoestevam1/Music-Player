@@ -1352,50 +1352,13 @@ background-color: #fdf3bd;
 margin-left: 10%;
 }
 
-#distorcoescognitivas{
-	float: left;
-		margin-left: 10%;
-		border-style: solid;
-	border-color: grey;
-background-color: #fdf3bd;
-	margin-top: 1.6%;
-}
 
-#mecanismosdedefesadoegopsicologia{
+#freud21{
     float: left;
 		margin-left: 10%;
 		border-style: solid;
 	border-color: grey;
 background-color: #fdf3bd;
 margin-top: 1.6%;
-	
-		
-}
-
-#Coping{
-    float: left;
-		margin-left: 10%;
-		border-style: solid;
-	border-color: grey;
-background-color: #fdf3bd;
-margin-top: 1.6%;
-	
-		
-}
-#Heidegger1{
-	float: left;
-		margin-left: 10%;
-		border-style: solid;
-	border-color: grey;
-background-color: #fdf3bd;
-	margin-top: 1.6%;
-}
-
-#TCC{
-    float: left;
-		margin-left: 10%;
-		border-style: solid;
-	border-color: grey;
-background-color: #fdf3bd;
-margin-top: 1.6%;
+	text-align: center;
 }

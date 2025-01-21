@@ -26,7 +26,7 @@
 <a href='http://www.radio-ao-vivo.com/embed/radio-canto-de-rock-476023'><img src="imagens/CantodeRock.png"></br>Canto de Rock</a>
 </div>
 <div id="Route66">
-<a href='https://route66soundtrack.co.uk/'><img src="imagens/route66.png"></br>Route 66 Soundtrack</a>
+<a href='https://www.accuradio.com/classic-rock'><img src="classicrock.png"></br>Classic Rock - AccuRadio</a>
 </div>
 <div id="Classic_Rock_Station">
 <a href='https://www.radio-ao-vivo.com/pt/classic-rock-station'><img src="imagens/classic_rock_station.png"></br>Classic Rock Station</a>

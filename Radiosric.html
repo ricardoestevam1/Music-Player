@@ -1,85 +1,148 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+		<link rel="stylesheet" type="text/css" >
+
+
+	<style>
+#Videosric {
+    
+background-color: #feec71;
+
+} 
+</style>
 	<meta charset="utf-8">
+
+		
 
 	<title>Rádios</title>
 </head>
+
+
+	
+
+
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
 <body>
-		<div id="logoradios">
-	<img src="logoradios.jpg">
-</div>
-<div id="menuecasaradios">
 	
-	<ul>
-	<li><a href="Filmesric.html">Filmes</a></li>
-	<li><a href="Livrosric.html">Livros</a></li>
-	<li><a href="Musicasric.html">Músicas</a></li>
-	<li><div id="videosTeoriaspsicodinâmicas"><a href="Radiosric.html">Rádios</a></li>
-	<li><a href="http://www.radio-ao-vivo.com/embed/radio-canto-de-rock-476023">Canto de Rock</a></li>
-	<li><a href="https://route66soundtrack.co.uk/">Route 66 Soundtrack</a></li>
-        <li><a href="https://www.radio-ao-vivo.com/pt/classic-rock-station">Classic Rock Station</a></li>
-	<li><a href="https://www.accuradio.com/sixties">Accuradio / Decade: 60's</a></li>
-	<li><a href="https://www.rockradio.com/60srock">Rockradio.com / 60's</a></li>
-	<li><a href="https://www.radioeletrica.com">Rádio Elétrica</a></li>
-	<li><a href="http://www.radios.com.br/play/23608">WRW</a></li>
-	<li><a href="http://streaming.procergs.com.br/fmcultura/">FM Cultura - 107.7</a></li>
-	<li><a href="https://1023.clicrbs.com.br/#!/home">102.3</a></li>
-	<li><a href="https://radiosaovivo.net/nativa-santa-maria/">Nativa FM</a></li>
-    <li><a href="https://radioimembui.com.br/#/">Imembuí</a></li>
-		<li><a href="https://www.radio-ao-vivo.com/gramado-rock">Gramado Rock</a></li>
-	<li><a href="Videosric.html">Videos</a></li>
+<body>
+	
+		<div id="logovideos">
+	<img src="logoradios.png">
+</div>
+	
+<div w3-include-html="contentradios.html" ></div>
+<script>
+includeHTML();
+</script>
+	
 
 	
-</ul>
-	<div id="inicio">
-	<a href="index.html"><img src="inicio.png"></a>
-</div>
-</div>
-<div id="meioradios">
 
-<div id="CantodeRock">
-<a href='http://www.radio-ao-vivo.com/embed/radio-canto-de-rock-476023'><img src="CantodeRock.png"></br>Canto de Rock</a>
+	
+	
+<div id="meiovideos">
+
+
+	<div id="Antigas2">
+<a href="http://www.radio-ao-vivo.com/embed/radio-canto-de-rock-476023">Canto de Rock</a>
 </div>
-<div id="Route66">
-<a href='https://www.accuradio.com/classic-rock'><img src="classicrock.png"></br>Classic Rock - AccuRadio</a>
+	<div id="Antigas2">
+<a href="https://www.accuradio.com/classic-rock">Classic Rock - AccuRadio</a>
 </div>
-<div id="Classic_Rock_Station">
-<a href='https://www.radio-ao-vivo.com/pt/classic-rock-station'><img src="classic_rock_station.png"></br>Classic Rock Station</a>
+	
+<div id="Antigas2">
+  <a href="https://www.radio-ao-vivo.com/pt/classic-rock-station">Classic Rock Station</a>
+
 </div>
-<div id="Decade60s">
-<a href='https://www.accuradio.com/sixties'><img src="accuradio.webp"></br>Decade: '60s</a>
+
+<div id="Antigas2">
+  <a href="https://www.accuradio.com/sixties">Accuradio / Decade: 60's</a>
 </div>
-<div id="Rockradio60">
-<a href='https://www.rockradio.com/60srock'><img src="Rockradio60.png"></br>Rockradio.com / 60's</a>
+	
+  
+<div id="Antigas2">
+  <a href="https://www.rockradio.com/60srock">Rockradio.com / 60's</a>
+
 </div>
-<div id="Radioeletrica">
-<a href='https://www.radioeletrica.com'><img src="Radioeletrica.png"></br>Rádio Elétrica</a>
+<div id="Antigas2">
+  <a href="https://www.radioeletrica.com">Rádio Elétrica</a>
+
 </div>
-<div id="wrw">
-<a href='http://www.radios.com.br/play/23608'><img src="wrw.png"></br>WRW</a>
+<div id="Antigas2">
+<a href="http://www.radios.com.br/play/23608">WRW</a>
+
 </div>
-<div id="FMCultura">
-<a href='http://streaming.procergs.com.br/fmcultura/'><img src="FMCultura.jpg"></br>FM Cultura 107.7</a>
+<div id="Antigas2">
+  <a href="http://streaming.procergs.com.br/fmcultura/">FM Cultura - 107.7</a>
+
 </div>
-<div id="centoedois">
-<a href='https://1023.clicrbs.com.br/#!/home'><img src="1023.png"></br>102.3</a>
+<div id="Antigas2">
+ <a href="https://1023.clicrbs.com.br/#!/home">102.3</a>
+
 </div>
-<div id="NativaFM">
-<a href='https://radiosaovivo.net/nativa-santa-maria/'><img src="NativaFM.jpg"></br>Nativa  FM</a>
+<div id="Antigas2">
+  <a href="https://radiosaovivo.net/nativa-santa-maria/">Nativa FM</a>
+
 </div>
-<div id="Imembui">
-<a href='https://radioimembui.com.br/#/'><img src="Imembui.jpg"></br>Imembuí</a>
+<div id="Antigas2">
+  <a href="https://radioimembui.com.br/#/">Imembuí</a>
+
 </div>
-<div id="Imembui">
-<a href='https://www.radiorockon.com/live'><img src="rockon.png"></br>Rock On</a>
+<div id="Antigas2">
+<a href="https://www.radiorockon.com/live">Rock On</a>
+
 </div>
-	<div id="Imembui">
-<a href='https://www.ufsm.br/orgaos-suplementares/radio'><img src="UniFM.jpg"></br>UniFM 107.9</a>
+<div id="Antigas2">
+<a href="https://www.ufsm.br/orgaos-suplementares/radio">UniFM 107.9</a>
+
 </div>
+
+
+
+
+
+
+
 </div>
 
 
 </body>
 </html>
+
+
+ 

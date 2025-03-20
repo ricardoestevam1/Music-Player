@@ -1485,3 +1485,14 @@ background-color: #fdf3bd;
 margin-top: 1.6%;
 }
 
+#meiovideos2{
+	width: 100%;
+
+background-color: #feec71;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 19px;
+	border-style: solid;
+	border-color: grey;
+}

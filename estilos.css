@@ -1554,12 +1554,14 @@ background-color: #feec71;
 	border-style: solid;
 	border-color: grey;
 }
-.teste img{
-
-
+.control2 {
+  position: relative;
+  width: 100%;
+	margin-top: 100%;
+ 
 }
-.PRONOMES1{
-
-
-
-}
+.control img {
+  position: absolute;
+  width: 100%;
+  margin-left: 0px;
+ }

@@ -52,19 +52,22 @@ let allMusic = [
         img: "Capa_Eric_Clapton1970",
         src: "09. Told You For The Last Time"
     },
-
- {
+   {
+        
         name: "10. Don't Know Why",
-        artist: "(1970) Eric Clapton,
+        artist: "(1970) Eric Clapton",
         img: "Capa_Eric_Clapton1970",
         src: "10. Don't Know Why"
     },
-    {
+
+     {
+        
         name: "11. Let It Rain",
         artist: "(1970) Eric Clapton",
         img: "Capa_Eric_Clapton1970",
         src: "11. Let It Rain"
     },
+
 
 
      {

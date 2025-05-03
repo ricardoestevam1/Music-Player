@@ -10,7 +10,7 @@ let allMusic = [
         name: "03. Lonesome And A Long Way From Home",
         artist: "(1970) Eric Clapton",
         img: "Capa_Eric_Clapton1970",
-        src: "03.Lonesome_And_A_Long_Way_From_Home"
+        src: "03. Lonesome And A Long Way From Home"
     },
  {
         name: "04. After Midnight",

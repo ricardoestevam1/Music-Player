@@ -59,7 +59,7 @@ let allMusic = [
      {
         name: "01. Cocaine",
         artist: "(1977) Slowhand",
-        img: "Capa_Eric_Clapton1977,
+     img: "Capa_Eric_Clapton1977",
         src: "01. Cocaine"
     },
  

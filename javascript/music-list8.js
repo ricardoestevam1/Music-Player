@@ -47,10 +47,10 @@ let allMusic = [
     },
 
  {
-        name: "09. Peaches And Diesel",
+        name: "09. Golden Ring",
                artist: "(1978) Backless ",
            img: "Capa_Eric_Clapton1978",
-        src: "09. Peaches And Diesel"
+        src: "09. Golden Ring"
     },
 
  {

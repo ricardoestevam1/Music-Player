@@ -57,7 +57,7 @@ let allMusic = [
         name: "10. Don't Know Why",
         artist: "(1970) Eric Clapton",
         img: "Capa_Eric_Clapton1970",
-        src: "10 .Don't Know Why"
+        src: "10. Don't Know Why"
     },
 
      {

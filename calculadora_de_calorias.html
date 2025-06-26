@@ -201,8 +201,70 @@ includeHTML();
 
 </form>
 
+</div>
+</div>
+<div id="formverduras"  style="transform: translate(2.5%, -106%);">
+
+    <label><h2    style="margin-left: -5%;  transform: translate(-2%, 0%);">Cereais</h2></label></br>
+    <div   id="jogarprolado3"  style="margin-left: 15.5%;">
+<form style="height: 1230px; width: 100%;" action="save14.php"  method="post" >
+  
+
+  <div  style="    background-color: white; height: 40%; width: 74%;  border-style: ridge; border-radius: 10%; border-width: 6px; text-align:center;  background-color: #f9f2d6;"  >
+    <div  id="meiodoconteudo"   style="margin-left: 150px;">
+    <label ><p  style="transform: translate(-31.125%, 15%);"  >Kcal / 100 g</p></label>
+        <label><p   style="transform: translate(-12.5%, -170%);"  >Quantidade (g)</hp></label>
+               <label><p   style="transform: translate(18.5%, -368%);"  >Resultado (Kcal)</p></label>
+               
+  <label for="teste1"    >
+  <input type="number"  name="cklegumes[]" id='17'  style="transform: translate(4.5%, -212.5%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -177.5%);"   id='18'></textarea>
+  <p   style="transform: translate(-47%, -600%);"  >Arroz Branco</p> 
+</label><label> <p    style="transform: translate(-31.125%,-787.5%);">128 Kcal</p></label>
+</br>
+
+<label for="teste1">
+    <input type="number"  name="cklegumes[]" id='19' style="transform: translate(4.5%, -547.5%);  height: 25px;"  ><textarea style="transform: translate(20%, -512%);  height: 25px;"    id='20'></textarea>
+   <p   style="transform: translate(-47%, -1170%);"  >Arroz Integral</p>
+</label><label   ><p  style="transform: translate(-31.125%,-1360%);"> 124 Kcal</p></label></br>
+<label for="teste1">
+  <input type="number"  name="cklegumes[]" id='21' style="transform: translate(4.5%, -877.5%);  height: 25px;"  ><textarea style="transform: translate(20%, -842%);  height: 25px;"    id='22'></textarea>
+   <p   style="transform: translate(-47%, -1730%);"  >Arroz Parboilizado</p>
+</label><label   ><p  style="transform: translate(-31.125%,-1920%);"> 123 Kcal</p></label></br>
+<label for="teste1">
+  <input type="number"  name="cklegumes[]" id='23' style="transform: translate(4.5%, -1207.5%);  height: 25px;"  ><textarea style="transform: translate(20%, -1172%);  height: 25px;"    id='24'></textarea>
+   <p   style="transform: translate(-47%, -2305%);"  >Farelo de Aveia</p>
+</label><label   ><p  style="transform: translate(-31.125%,-2490%);"> 246 Kcal</p></label></br>
+<label for="teste1">
+  <input type="number"  name="cklegumes[]" id='25' style="transform: translate(4.5%, -1537.5%);  height: 25px;"  ><textarea style="transform: translate(20%, -1502%);  height: 25px;"    id='26'></textarea>
+   <p   style="transform: translate(-47%, -2870%);"  >Farinha de Trigo</p>
+</label><label   ><p  style="transform: translate(-31.125%,-3060%);"> 360 Kcal</p></label></br>
+<label for="teste1">
+  <input type="number"  name="cklegumes[]" id='27' style="transform: translate(4.5%, -1867.5%);  height: 25px;"  ><textarea style="transform: translate(20%, -1832%);  height: 25px;"    id='28'></textarea>
+   <p   style="transform: translate(-49.5%, -3430%);"  >Farinha de Trigo Integral</p>
+</label><label   ><p  style="transform: translate(-31.125%,-3620%);"> 339 Kcal</p></label></br>
+<label for="teste1">
+  <input type="number"  name="cklegumes[]" id='29' style="transform: translate(4.5%, -2197.5%);  height: 25px;"  ><textarea style="transform: translate(20%, -2162%);  height: 25px;"    id='30'></textarea>
+   <p   style="transform: translate(-47%, -4090%);"  >Milho</p><p  style="  transform: translate(-47%, -4180%);"  >Espiga Grande</p>
+</label><label   ><p  style="transform: translate(-31.125%,-4390%);"> 129 Kcal</p></label></br>
 
 
+  <p   style="transform: translate(-47%, -2897.5%);"  ></p>
+</label><label><p  style="transform: translate(-10%,-4535.5%);">Total de Kcal dos Cereais</p></label></br>
+
+<p><button  style="transform: translate(-39%, -3780%);" id="teste14" type="button"  onclick='t14()'>Calcular Kcal dos Cereais</button></p><br>
+
+
+
+  <p style=" height: 25px; transform: translate(20%, -2517.5%);"   id='frase'></p>
+    <div ><textarea  style=" height: 25px; transform: translate(73%, -3232.5%);"   id='output6'></textarea></div>
+     
+
+        <div ><textarea  style=" height: 25px; transform: translate(73%, -3210.375%);"   id='output7'></textarea></div>
+               <p style=" height: 25px; transform: translate(-24.5%, -4164%);"   id='frase'>Total de Kcal Legumes + Carnes + Verduras + Cereais</p>
+</div>
+</div>
+
+</form>
 
 
 
@@ -492,5 +554,217 @@ const totallegumesecarneseverdurasCALCULADOTRANSFORMADOtotal = (t2emgramascalcul
   var output5 = document.getElementById('output5');
     
   output5 .innerHTML +=  totallegumesecarneseverdurasCALCULADOTRANSFORMADOtotal;
+});
+
+//
+
+
+const button4 = document.getElementById('teste14');
+
+  button4.addEventListener('click', function t14()  {
+
+ var t17 = document.getElementById("17").value;
+  var t18 = document.getElementById("18");
+   t18.value = t17*1.28;
+
+   var t19 = document.getElementById("19").value;
+  var t20 = document.getElementById("20");
+   t20.value = t19*1.24;
+
+ var t21 = document.getElementById("21").value;
+  var t22 = document.getElementById("22");
+   t22.value = t21*1.23;
+
+   var t23 = document.getElementById("23").value;
+  var t24 = document.getElementById("24");
+   t24.value = t23*2.46;
+
+    var t25 = document.getElementById("25").value;
+  var t26 = document.getElementById("26");
+   t26.value = t25*3.60;
+
+   var t27 = document.getElementById("27").value;
+  var t28 = document.getElementById("28");
+   t28.value = t27*3.39;
+
+    var t29 = document.getElementById("29").value;
+  var t30 = document.getElementById("30");
+   t30.value = t29*1.29;
+
+
+
+
+});
+button4.addEventListener('click', function transformaremnumero4() {
+
+
+
+
+ var t17 = document.getElementById("17").value;
+  var t18 = document.getElementById("18");
+   t18.value = t17*1.28;
+
+   var t19 = document.getElementById("19").value;
+  var t20 = document.getElementById("20");
+   t20.value = t19*1.24;
+
+ var t21 = document.getElementById("21").value;
+  var t22 = document.getElementById("22");
+   t22.value = t21*1.23;
+
+   var t23 = document.getElementById("23").value;
+  var t24 = document.getElementById("24");
+   t24.value = t23*2.46;
+
+    var t25 = document.getElementById("25").value;
+  var t26 = document.getElementById("26");
+   t26.value = t25*3.60;
+
+   var t27 = document.getElementById("27").value;
+  var t28 = document.getElementById("28");
+   t28.value = t27*3.39;
+
+    var t29 = document.getElementById("29").value;
+  var t30 = document.getElementById("30");
+   t30.value = t29*1.29;
+
+
+
+
+
+const t18emgramascalculado = t18.value;
+const t20emgramascalculado = t20.value;
+const t22emgramascalculado = t22.value;
+const t24emgramascalculado = t24.value;
+const t26emgramascalculado = t26.value;
+const t28emgramascalculado = t28.value;
+const t30emgramascalculado = t30.value;
+
+
+const t18emgramascalculadoTRANSFORMADO =  parseInt(t18emgramascalculado);
+const t20emgramascalculadoTRANSFORMADO =  parseInt(t20emgramascalculado);
+const t22emgramascalculadoTRANSFORMADO =  parseInt(t22emgramascalculado);
+const t24emgramascalculadoTRANSFORMADO =  parseInt(t24emgramascalculado);
+const t26emgramascalculadoTRANSFORMADO =  parseInt(t26emgramascalculado);
+const t28emgramascalculadoTRANSFORMADO =  parseInt(t28emgramascalculado);
+const t30emgramascalculadoTRANSFORMADO =  parseInt(t30emgramascalculado);
+
+
+
+const totalCALCULADOTRANSFORMADOcereais = (t18emgramascalculadoTRANSFORMADO) + t20emgramascalculadoTRANSFORMADO + t22emgramascalculadoTRANSFORMADO + t24emgramascalculadoTRANSFORMADO + t26emgramascalculadoTRANSFORMADO + t28emgramascalculadoTRANSFORMADO + t30emgramascalculadoTRANSFORMADO ;
+
+  var output6 = document.getElementById('output6');
+    
+  output6 .innerHTML +=  totalCALCULADOTRANSFORMADOcereais;
+
+
+});
+
+
+button4.addEventListener('click', function calculototallegumesecarneseverduras()  {
+
+
+  var t1 = document.getElementById("01").value;
+  var t2 = document.getElementById("02");
+    t2.value = t1*0.48;
+
+   var t3 = document.getElementById("03").value;
+  var t4 = document.getElementById("04");
+    t4.value = t3*0.86;
+  
+  var t5 = document.getElementById("05").value;
+  var t6 = document.getElementById("06");
+   t6.value = t5*0.30;
+
+  var t7 = document.getElementById("07").value;
+  var t8 = document.getElementById("08");
+   t8.value = t7*0.24;
+
+     var t9 = document.getElementById("09").value;
+  var t10 = document.getElementById("10");
+   t10.value = t9*0.18;
+
+var t11 = document.getElementById("11").value;
+  var t12 = document.getElementById("12");
+    t12.value = t11*2.04;
+
+var t13 = document.getElementById("13").value;
+  var t14 = document.getElementById("14");
+   t14.value = t13*0.26;
+
+   var t15 = document.getElementById("15").value;
+  var t16 = document.getElementById("16");
+   t16.value = t15*0.22;
+
+
+ var t17 = document.getElementById("17").value;
+  var t18 = document.getElementById("18");
+   t18.value = t17*1.28;
+
+   var t19 = document.getElementById("19").value;
+  var t20 = document.getElementById("20");
+   t20.value = t19*1.24;
+
+ var t21 = document.getElementById("21").value;
+  var t22 = document.getElementById("22");
+   t22.value = t21*1.23;
+
+   var t23 = document.getElementById("23").value;
+  var t24 = document.getElementById("24");
+   t24.value = t23*2.46;
+
+    var t25 = document.getElementById("25").value;
+  var t26 = document.getElementById("26");
+   t26.value = t25*3.60;
+
+   var t27 = document.getElementById("27").value;
+  var t28 = document.getElementById("28");
+   t28.value = t27*3.39;
+
+    var t29 = document.getElementById("29").value;
+  var t30 = document.getElementById("30");
+   t30.value = t29*1.29;
+
+
+const t2emgramascalculado = t2.value;
+   const t4emgramascalculado = t4.value;
+  const t6emgramascalculado = t6.value;
+   const t8emgramascalculado = t8.value;
+  const t10emgramascalculado = t10.value;
+const t12emgramascalculado = t12.value;
+const t14emgramascalculado = t14.value;
+const t16emgramascalculado = t16.value;
+const t18emgramascalculado = t18.value;
+const t20emgramascalculado = t20.value;
+const t22emgramascalculado = t22.value;
+const t24emgramascalculado = t24.value;
+const t26emgramascalculado = t26.value;
+const t28emgramascalculado = t28.value;
+const t30emgramascalculado = t30.value;
+
+
+
+const t2emgramascalculadoTRANSFORMADO =  parseInt(t2emgramascalculado);
+const t4emgramascalculadoTRANSFORMADO =  parseInt(t4emgramascalculado);
+const t6emgramascalculadoTRANSFORMADO =  parseInt(t6emgramascalculado);
+const t8emgramascalculadoTRANSFORMADO =  parseInt(t8emgramascalculado);
+const t10emgramascalculadoTRANSFORMADO =  parseInt(t10emgramascalculado);
+const t12emgramascalculadoTRANSFORMADO =  parseInt(t12emgramascalculado);
+const t14emgramascalculadoTRANSFORMADO =  parseInt(t14emgramascalculado);
+const t16emgramascalculadoTRANSFORMADO =  parseInt(t16emgramascalculado);
+const t18emgramascalculadoTRANSFORMADO =  parseInt(t18emgramascalculado);
+const t20emgramascalculadoTRANSFORMADO =  parseInt(t20emgramascalculado);
+const t22emgramascalculadoTRANSFORMADO =  parseInt(t22emgramascalculado);
+const t24emgramascalculadoTRANSFORMADO =  parseInt(t24emgramascalculado);
+const t26emgramascalculadoTRANSFORMADO =  parseInt(t26emgramascalculado);
+const t28emgramascalculadoTRANSFORMADO =  parseInt(t28emgramascalculado);
+const t30emgramascalculadoTRANSFORMADO =  parseInt(t30emgramascalculado);
+
+
+const totallegumesecarneseverdurasecereaisCALCULADOTRANSFORMADOtotal = (t2emgramascalculadoTRANSFORMADO) + t4emgramascalculadoTRANSFORMADO + t6emgramascalculadoTRANSFORMADO + t8emgramascalculadoTRANSFORMADO + t10emgramascalculadoTRANSFORMADO + t12emgramascalculadoTRANSFORMADO + t14emgramascalculadoTRANSFORMADO + t16emgramascalculadoTRANSFORMADO + t18emgramascalculadoTRANSFORMADO + t20emgramascalculadoTRANSFORMADO + t22emgramascalculadoTRANSFORMADO+ t24emgramascalculadoTRANSFORMADO + t26emgramascalculadoTRANSFORMADO + t28emgramascalculadoTRANSFORMADO + t30emgramascalculadoTRANSFORMADO;
+
+  var output7 = document.getElementById('output7');
+    
+  output7 .innerHTML +=  totallegumesecarneseverdurasecereaisCALCULADOTRANSFORMADOtotal;
 });
 </script>

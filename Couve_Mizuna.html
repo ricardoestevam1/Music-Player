@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8" />
+
+
+  <head>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+   <meta charset="UTF-8" />
+  <title>Calendário Repolho Roxo – Folhas Jovens</title>
+</head>
+
+  
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+  
+<body>
+    <div id="logovideos">
+  <img src="logocouvemizuna.png">
+</div>
+
+  
+<div w3-include-html="contentindex.html" ></div>
+<script>
+includeHTML();
+</script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+          max-width: 100%;
+    }
+    label, input, button {
+      font-size: 1rem;
+      margin: 0.5em 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #81c784;
+      padding: 0.75em;
+      text-align: center;
+    }
+    th {
+      background-color: #2e7d32;
+      color: #ffffff;
+    }
+    td {
+      background-color: #e8f5e9;
+    }
+    .resultado {
+      margin-top: 2em;
+      padding: 1.5em;
+      background-color: #f1f8e9;
+      border: 1px solid #aed581;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+    <div id="meio" style="display: block;">
+<div   id="jogarprolado"  style="justify-content: center;  height: 1000px;">
+  <h2>🌿 Calendário Visual – Couve Mizuna (folhas jovens em vaso)</h2>
+
+  <form onsubmit="gerarCalendario(event)">
+    <label for="plantio">📅 Informe a data da semeadura:</label><br>
+    <input type="date" id="plantio" required />
+    <br><br>
+    <button type="submit">Gerar Calendário</button>
+  </form>
+
+  <div id="resultado" class="resultado" style="display: none;"></div>
+
+  <script>
+    function formatarData(data) {
+      return data.toLocaleDateString('pt-BR');
+    }
+
+    function adicionarDias(data, dias) {
+      const nova = new Date(data);
+      nova.setDate(nova.getDate() + dias);
+      nova.setHours(0,0,0,0);
+      return nova;
+    }
+
+    function datasIguais(data1, data2) {
+      return data1.getDate() === data2.getDate() &&
+             data1.getMonth() === data2.getMonth() &&
+             data1.getFullYear() === data2.getFullYear();
+    }
+
+    function gerarCalendario(event) {
+      event.preventDefault();
+      const inputData = document.getElementById("plantio").value;
+      const dataSemeadura = new Date(inputData + "T00:00:00");
+      if (isNaN(dataSemeadura)) return;
+
+      const hoje = new Date();
+      hoje.setHours(0, 0, 0, 0);
+
+      const etapas = [
+        { semana: 0, dias: 0, etapa: "🌱 Semeadura", acao: "Substrato leve com 20 g de húmus sólido por vaso" },
+        { semana: 1, dias: 7, etapa: "🌿 Germinação", acao: "Manter umidade constante; sem adubação ainda" },
+        { semana: 2, dias: 14, etapa: "🌤️ Sacudação", acao: "Exposição gradual ao sol por 3 dias" },
+        { semana: 3, dias: 21, etapa: "🪴 Transplante", acao: "Adicionar 1 colher de sopa (15 g) de bokashi caseiro ao substrato" },
+        { semana: 4, dias: 28, etapa: "🧴 Adubação inicial", acao: "Aplicar 150 ml de húmus líquido (1:10) ou chá de compostagem, 1x por semana" },
+        { semana: 6, dias: 42, etapa: "🌿 Crescimento vegetativo", acao: "Reaplicar 150 ml de húmus líquido ou chá de compostagem semanalmente + cobertura morta" },
+        { semana: 7, dias: 49, etapa: "✂️ Colheita de folhas jovens", acao: "Corte externo com tesoura limpa; repetir a cada 7–10 dias" },
+        { semana: 10, dias: 70, etapa: "🧪 Nova semeadura (opcional)", acao: "Iniciar nova muda para revezar o cultivo" },
+        { semana: 12, dias: 84, etapa: "🔁 Substituição da planta", acao: "Remover planta esgotada e reiniciar o ciclo com substrato renovado" }
+      ];
+
+      let tabela = `
+        <h3>📆 Calendário Visual com as etapas de cultivo</h3>
+        <table>
+          <tr>
+            <th>Semana</th>
+            <th>Data Estimada</th>
+            <th>Etapa</th>
+            <th>Recomendação Detalhada</th>
+          </tr>
+      `;
+
+      etapas.forEach(item => {
+        const dataEtapa = adicionarDias(dataSemeadura, item.dias);
+        tabela += `
+          <tr>
+            <td>${item.semana}</td>
+            <td>${formatarData(dataEtapa)}</td>
+            <td>${item.etapa}</td>
+            <td>${item.acao}</td>
+          </tr>
+        `;
+        if (datasIguais(dataEtapa, hoje)) {
+          alert(`📅 Etapa de hoje: ${item.etapa}\n💡 ${item.acao}`);
+        }
+      });
+
+      tabela += `</table>`;
+      document.getElementById("resultado").innerHTML = tabela;
+      document.getElementById("resultado").style.display = "block";
+    }
+  </script>
+</body>
+</html>

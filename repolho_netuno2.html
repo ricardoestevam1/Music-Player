@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calendário Repolho Roxo Netuno – Folhas Jovens</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="https://apis.google.com/js/api.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 100%;
+    }
+    label, input, button {
+      font-size: 1rem;
+      margin: 0.5em 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ba68c8;
+      padding: 0.75em;
+      text-align: center;
+    }
+    th {
+      background-color: #6a1b9a;
+      color: #ffffff;
+    }
+    td {
+      background-color: #f3e5f5;
+    }
+    .resultado {
+      margin-top: 2em;
+      padding: 1.5em;
+      background-color: #f8f0fb;
+      border: 1px solid #ba68c8;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="logovideos">
+    <img src="logorepolhonetuno.png">
+  </div>
+
+  <h2>🥬 Calendário de Cultivo – Repolho Roxo Netuno</h2>
+  <button onclick="autenticarGoogleCalendar()">🔐 Entrar com Google</button><br><br>
+
+  <form onsubmit="gerarCalendario(event)">
+    <label for="plantio">📅 Informe a data da semeadura:</label><br>
+    <input type="date" id="plantio" required /><br><br>
+    <button type="submit">Gerar Calendário</button>
+  </form>
+
+  <div id="resultado" class="resultado" style="display: none;"></div>
+
+  <script>
+    const CLIENT_ID = 'SUA_CLIENT_ID_AQUI';
+    const SCOPES = 'https://www.googleapis.com/auth/calendar.events';
+
+    function carregarCliente() {
+      gapi.client.load('calendar', 'v3');
+    }
+
+    function iniciarAPI() {
+      gapi.client.init({
+        clientId: CLIENT_ID,
+        scope: SCOPES,
+        discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
+      }).then(() => {
+        gapi.auth2.getAuthInstance().signIn().then(() => {
+          console.log("✅ Autenticado com sucesso");
+        });
+      });
+    }
+
+    function autenticarGoogleCalendar() {
+      gapi.load('client:auth2', () => {
+        gapi.auth2.init({ client_id: CLIENT_ID }).then(() => {
+          iniciarAPI();
+        });
+      });
+    }
+
+    function criarEventoGoogleCalendar(titulo, dataInicio) {
+      const fim = new Date(dataInicio);
+      fim.setHours(dataInicio.getHours() + 1);
+
+      const evento = {
+        summary: titulo,
+        start: {
+          dateTime: dataInicio.toISOString(),
+          timeZone: 'America/Sao_Paulo',
+        },
+        end: {
+          dateTime: fim.toISOString(),
+          timeZone: 'America/Sao_Paulo',
+        }
+      };
+
+      gapi.client.calendar.events.insert({
+        calendarId: 'primary',
+        resource: evento,
+      }).then(response => {
+        console.log("📅 Evento criado:", response.result.htmlLink);
+      });
+    }
+
+    function formatarData(data) {
+      return data.toLocaleDateString('pt-BR');
+    }
+
+    function adicionarDias(data, dias) {
+      const nova = new Date(data);
+      nova.setDate(nova.getDate() + dias);
+      nova.setHours(0,0,0,0);
+      return nova;
+    }
+
+    function datasIguais(data1, data2) {
+      return data1.getDate() === data2.getDate() &&
+             data1.getMonth() === data2.getMonth() &&
+             data1.getFullYear() === data2.getFullYear();
+    }
+
+    function gerarCalendario(event) {
+      event.preventDefault();
+      const inputData = document.getElementById("plantio").value;
+      const dataSemeadura = new Date(inputData + "T00:00:00");
+      if (isNaN(dataSemeadura)) return;
+
+      const hoje = new Date();
+      hoje.setHours(0, 0, 0, 0);
+
+      const etapas = [
+        { semana: 0, dias: 0, etapa: "🌱 Semeadura", acao: "Substrato leve e úmido; 2 a 3 sementes por célula" },
+        { semana: 1, dias: 7, etapa: "🌿 Germinação", acao: "Manter umidade e luz indireta" },
+        { semana: 2, dias: 14, etapa: "🌤️ Sacudação", acao: "Exposição gradual ao sol" },
+        { semana: 3, dias: 21, etapa: "🪴 Transplante", acao: "Misturar 20 g de húmus ao substrato" },
+        { semana: 4, dias: 28, etapa: "🧴 Adubação inicial", acao: "Aplicar húmus líquido ou sólido semanalmente" },
+        { semana: 6, dias: 42, etapa: "🌿 Crescimento vegetativo", acao: "Húmus semanal + cobertura morta" },
+        { semana: 7, dias: 49, etapa: "✂️ Primeira colheita", acao: "Corte das folhas externas com tesoura" },
+        { semana: 10, dias: 70, etapa: "🧪 Nova semeadura", acao: "Nova muda para revezar o cultivo" },
+        { semana: 12, dias: 84, etapa: "🔁 Substituição", acao: "Remover planta e reiniciar ciclo" }
+      ];
+
+      let tabela = `
+        <h3>📆 Calendário de Etapas</h3>
+        <table>
+          <tr>
+            <th>Semana</th>
+            <th>Data</th>
+            <th>Etapa</th>
+            <th>Recomendação</th>
+          </tr>
+      `;
+
+      etapas.forEach(item => {
+        const dataEtapa = adicionarDias(dataSemeadura, item.dias);
+        tabela += `
+          <tr>
+            <td>${item.semana}</td>
+            <td>${formatarData(dataEtapa)}</td>
+            <td>${item.etapa}</td>
+            <td>${item.acao}</td>
+          </tr>
+        `;
+        if (datasIguais(dataEtapa, hoje)) {
+          alert(`📌 Etapa de hoje: ${item.etapa}\n💡 ${item.acao}`);
+        }
+
+        criarEventoGoogleCalendar(item.etapa, dataEtapa); // ← Adiciona evento no calendário
+      });
+
+      tabela += `</table>`;
+      document.getElementById("resultado").innerHTML = tabela;
+      document.getElementById("resultado").style.display = "block";
+    }
+  </script>
+</body>
+</html>

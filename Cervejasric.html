@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+		<link rel="stylesheet" type="text/css" >
+
+
+	<style>
+#Culinaria {
+    
+background-color: #feec71;
+
+} 
+#bombacontent{
+    
+background-color: #feec71;
+
+} 
+</style>
+	<meta charset="utf-8">
+
+		
+
+	<title>Tipos de Cerveja - BJCP</title>
+</head>
+
+
+	
+
+
+	
+
+	
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+	
+<body>
+	
+<body>
+	
+		<div id="logovideos">
+	<img src="logocervejas.jpg">
+</div>
+	
+<div w3-include-html="contentcervejas.html" ></div>
+<script>
+includeHTML();
+</script>
+	
+
+
+<div id="meiomusicas">
+
+<div id="Blues1">
+<a href='AmericanIPA.html'><img src="AmericanIPA.jpg"></br>American IPA</a>
+</div>
+<div id="George_Harrisson">
+<a href='AmericanStout.html'><img src="AmericanStout.png"></br>American Stout</a>
+</div>
+<div id="Antigas2">
+<a href='Bock.html'><img src="Bock.jpg"></br>Bock</a>
+</div>
+<div id="Antigas">
+<a href='Helles.html'><img src="Helles.jpg"></br>Helles</a>
+</div>
+<div id="Eric_Clapton">
+<a href='IrishRedAle.html'><img src="IrishRedAlejpg"></br>Irish Red Ale</a>
+</div>
+<div id="BobMarley">
+<a href='Weiss.html'><img src="Weiss.jpg"></br>Weiss</a>
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

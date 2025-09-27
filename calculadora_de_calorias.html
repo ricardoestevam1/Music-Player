@@ -155,15 +155,15 @@ includeHTML();
 <label for="teste1"    >
 
 
-  <p   style="transform: translate(-47%, -387.5%);"  >Coxa de Frango</br>Cozida</br>Sem Pele</p>     <input type="number"  name="cklegumes[]" id='11'  style="transform: translate(4.5%, -900%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -864.5%);"   id='12'></textarea>
+  <p   style="transform: translate(-47%, -387.5%);"  >Coxa de Frango</br>Cozida</br>Sem Pele</p>     <input type="number"  name="cklegumes[]" id='35'  style="transform: translate(4.5%, -900%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -864.5%);"   id='36'></textarea>
 </label><label> <p    style="transform: translate(-31.125%,-1777.5%);">167 Kcal</p></label>
 </br>
 
 
- <p   style="transform: translate(-47%, -1877.5%);"  >Pernil Suíno Cozido</p>   <input type="number"  name="cklegumes[]" id='11'  style="transform: translate(4.5%, -1245%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -1209.5%);"   id='12'></textarea>
+ <p   style="transform: translate(-47%, -1877.5%);"  >Pernil Suíno Cozido</p>   <input type="number"  name="cklegumes[]" id='37'  style="transform: translate(4.5%, -1245%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -1209.5%);"   id='38'></textarea>
 </label><label> <p    style="transform: translate(-31.125%,-2387.5%);">168 Kcal</p></label>
 </br>
- <p   style="transform: translate(-47%, -2497.5%);"  >Sardinha Cozida</p>   <input type="number"  name="cklegumes[]" id='11'  style="transform: translate(4.5%, -1611.5%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -1575%);"   id='12'></textarea>
+ <p   style="transform: translate(-47%, -2497.5%);"  >Sardinha Cozida</p>   <input type="number"  name="cklegumes[]" id='39'  style="transform: translate(4.5%, -1611.5%);   height: 25px;" ><textarea style=" height: 25px; transform: translate(20%, -1575%);"   id='40'></textarea>
 </label><label> <p    style="transform: translate(-31.125%,-2997.5%);">121 Kcal</p></label>
 </br>
 
@@ -440,28 +440,52 @@ const button2 = document.getElementById('teste12');
   var t11 = document.getElementById("11").value;
   var t12 = document.getElementById("12");
     t12.value = t11*2.04;
-
-  
-
-
+  var t35 = document.getElementById("35").value;
+  var t36 = document.getElementById("36");
+    t36.value = t35*1.67;
+  var t37 = document.getElementById("37").value;
+  var t38 = document.getElementById("38");
+    t38.value = t37*1.68;
+var t39 = document.getElementById("39").value;
+  var t40 = document.getElementById("40");
+    t40.value = t39*1.21;
 });
 button2.addEventListener('click', function transformaremnumero2() {
 
 
 
-var t11 = document.getElementById("11").value;
+ var t11 = document.getElementById("11").value;
   var t12 = document.getElementById("12");
     t12.value = t11*2.04;
+  var t35 = document.getElementById("35").value;
+  var t36 = document.getElementById("36");
+    t36.value = t35*1.67;
+  var t37 = document.getElementById("37").value;
+  var t38 = document.getElementById("38");
+    t38.value = t37*1.68;
+var t39 = document.getElementById("39").value;
+  var t40 = document.getElementById("40");
+    t40.value = t39*1.21;
 
 
 
 const t12emgramascalculado = t12.value;
 
+const t36emgramascalculado = t36.value;
+
+const t38emgramascalculado = t38.value;
+
+const t40emgramascalculado = t40.value;
 
 const t12emgramascalculadoTRANSFORMADO =  parseInt(t12emgramascalculado);
 
+const t36emgramascalculadoTRANSFORMADO =  parseInt(t36emgramascalculado);
 
-const totalCALCULADOTRANSFORMADOcarnes = (t12emgramascalculadoTRANSFORMADO);
+const t38emgramascalculadoTRANSFORMADO =  parseInt(t38emgramascalculado);
+
+const t40emgramascalculadoTRANSFORMADO =  parseInt(t40emgramascalculado);
+
+const totalCALCULADOTRANSFORMADOcarnes = (t12emgramascalculadoTRANSFORMADO) + t36emgramascalculadoTRANSFORMADO + t38emgramascalculadoTRANSFORMADO + t40emgramascalculadoTRANSFORMADO;
 
   var output2 = document.getElementById('output2');
     

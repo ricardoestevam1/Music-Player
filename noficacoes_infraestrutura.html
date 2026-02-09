@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendário com Eventos</title>
+  <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+  <h1>Meu Calendário</h1>
+  <button id="authorize_button">Login com Google</button>
+  <button id="signout_button">Logout</button>
+
+  <form id="eventForm">
+    <label>Título do evento:</label>
+    <input type="text" id="eventTitle" required><br>
+    <label>Data e hora início:</label>
+    <input type="datetime-local" id="startTime" required><br>
+    <label>Data e hora fim:</label>
+    <input type="datetime-local" id="endTime" required><br>
+    <button type="submit">Adicionar evento</button>
+  </form>
+
+  <script>
+    const CLIENT_ID = "SUA_CLIENT_ID.apps.googleusercontent.com";
+    const API_KEY = "SUA_API_KEY";
+    const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+    const SCOPES = "https://www.googleapis.com/auth/calendar.events";
+
+    let authorizeButton = document.getElementById("authorize_button");
+    let signoutButton = document.getElementById("signout_button");
+
+    function handleClientLoad() {
+      gapi.load("client:auth2", initClient);
+    }
+
+    function initClient() {
+      gapi.client.init({
+        apiKey: API_KEY,
+        clientId: CLIENT_ID,
+        discoveryDocs: DISCOVERY_DOCS,
+        scope: SCOPES
+      }).then(() => {
+        let authInstance = gapi.auth2.getAuthInstance();
+        authorizeButton.onclick = () => authInstance.signIn();
+        signoutButton.onclick = () => authInstance.signOut();
+
+        document.getElementById("eventForm").addEventListener("submit", addEvent);
+      });
+    }
+
+    function addEvent(e) {
+      e.preventDefault();
+      let event = {
+        summary: document.getElementById("eventTitle").value,
+        start: { dateTime: document.getElementById("startTime").value },
+        end: { dateTime: document.getElementById("endTime").value }
+      };
+
+      gapi.client.calendar.events.insert({
+        calendarId: "primary",
+        resource: event
+      }).then(response => {
+        alert("Evento criado com sucesso!");
+      });
+    }
+
+    handleClientLoad();
+  </script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+body{
+  background-color: #fdfab0;
+
+  background-image: url("imagens/logoavengers24.png");
+
+
+}
+
+
+
+.logo{
+
+  width: 1334px;
+  height: 101px;  
+  background-color: #1b0e8e;
+  margin-top: -8px;
+  margin-left: -4px;
+
+  border-style: ridge;
+
+  border-width: 3px;
+}
+
+.logo img{
+
+  width: 1334px;
+  height: 100px;
+}
+
+
+
+.corpo1{
+  display: inline-block;
+ width: 1334px;
+ background-color: ;
+  
+  }
+
+
+
+.letras{
+
+  width: 400px;
+  height: 450px;
+  background-color: ;
+  float:  left;
+ 
+
+}
+
+.letraspreborda{
+width: 370px;
+height: 50px;
+border-style: ridge;
+border-radius: 20%;
+border-width: 6px;
+background-color:#e3d757;
+background-image: url("imagens/palavraavengersunicaparatres3.png");
+margin-top:14px;
+margin-left: -6px;
+
+}
+.containerletraspre{
+  
+}
+
+.containerletraspre img{
+   margin-left: 165px;
+
+  margin-top: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+.letrasborda{
+  transform: scaleY(0.90);
+margin-top: 2.2px;
+margin-left: -6px;
+width: 370px;
+height: 417px;
+border-style: ridge;
+border-radius: 10%;
+border-width: 6px;
+background-image: url("imagens/escudo.png");
+background-color: #e3d757;
+}
+
+
+.letrasborda img{
+
+width: 66px;
+  height: 66px;
+}
+
+
+
+
+
+.containerletras{
+
+
+  margin-left: 12px;
+}
+
+.letraslinha6{
+  margin-left: 141px;
+}
+
+
+
+
+
+
+.meio{
+  margin-top: 2px;
+margin-left: -21.02px;
+float: left;
+width: 660px;
+height: 500px;
+
+border-style: ridge;
+border-radius: 10%;
+border-width: 12px;
+background-image: url("imagens/meiohulk.png");
+background-color: #fada03;
+}
+
+.containermeioletras{
+  display: inline-block;
+}
+
+.bmaiuscula{
+  float: left;
+  margin-left: 63.5px;
+  margin-top: 10px;
+}
+
+
+
+.bminuscula{
+  float: left;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.bnome{
+float: left;
+  margin-top: 50px;
+margin-left: 112.5px;
+}
+
+.bvideo{
+  float: left;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+
+
+
+
+
+.containernumeros{
+}
+.numeros{
+  margin-top: 4.495px;
+   width: 100px;
+  height: 450px;
+ 
+  float:  left;
+}
+
+.numerosanteborda{
+
+}
+
+.numerosborda{
+margin-left: 3px;
+margin-top: 3px;
+width: 263px;
+height: 414px;
+border-style: ridge;
+border-radius: 10%;
+border-width: 6px;
+background-color: ;
+transform: scaleX(0.98);
+transform: scaleY(1.03);
+background-image: url("imagens/manopla.png");
+background-color: #e3d757;
+}
+.numeros img{
+  margin-left: 2px;
+  margin-top: 1.5px;
+  width: 47px;
+  height: 47px;
+  
+
+}
+
+
+
+.skins{
+width: 263px;
+height: 48px;
+border-style: ridge;
+border-radius: 20%;
+border-width: 6px;
+background-color:#e3d757;
+background-image: url("imagens/logomarvel88.png");
+float: left;
+margin-top: 29px;
+margin-left: 3px;
+display: inline-flex;
+}
+
+
+
+
+.botaoskins{
+
+  margin-left: 6px;
+  margin-top: 1px;
+  width: 60px;
+
+}
+
+.skinazul {
+  
+margin-left: -2px;
+margin-top: 0px;
+transform: scale(0.7);
+  
+}
+
+.skinverdefraco {
+  
+margin-left: 0px;
+margin-top: 0px;
+transform: scale(0.7);
+}
+
+.skinverdeforte {
+  
+  margin-left: 0px;
+margin-top: 0px;
+transform: scale(0.7);
+}
+
+.skinamarelo {
+  
+  margin-left: 0px;
+margin-top: 0px;
+transform: scale(0.7);
+}
+
+
+
+

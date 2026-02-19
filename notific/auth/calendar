@@ -21,7 +21,7 @@
   </form>
 
   <script>
-    const CLIENT_ID = "SUA_CLIENT_ID.apps.googleusercontent.com";
+    const CLIENT_ID = "598813050242-4cvgvpkvmsnh42rvcticmj0fvlkddr01.apps.googleusercontent.com";
     const API_KEY = "SUA_API_KEY";
     const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
     const SCOPES = "https://www.googleapis.com/auth/calendar.events";

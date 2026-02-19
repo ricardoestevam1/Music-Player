@@ -2,13 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Calendário com Google OAuth</title>
+  <title>Calendário Google</title>
   <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
-  <h1>Meu Calendário</h1>
-  <button id="authorize_button">Login com Google</button>
-  <button id="signout_button">Logout</button>
+  <h1>Adicionar Evento ao Google Calendar</h1>
 
   <form id="eventForm">
     <label>Título do evento:</label>
@@ -22,17 +20,13 @@
 
   <script>
     // 🔑 Substitua pelos valores do seu projeto no Google Cloud
-    const CLIENT_ID = "598813050242-4cvgvpkvmsnh42rvcticmj0fvlkddr01.apps.googleusercontent.com";
-    const API_KEY = "AIzaSyBX2yEOI2fKmcWk1lo7DlP-k0kzIBCjaVM";
+    const CLIENT_ID = "SEU_CLIENT_ID.apps.googleusercontent.com";
+    const API_KEY = "SUA_API_KEY";
 
-    // 📜 Passo 4 – Escopo de acesso
+    // 📜 Escopo de acesso
     const SCOPES = "https://www.googleapis.com/auth/calendar.events";
     const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 
-    let authorizeButton = document.getElementById("authorize_button");
-    let signoutButton = document.getElementById("signout_button");
-
-    // 📲 Passo 5 – Inicializar cliente OAuth
     function handleClientLoad() {
       gapi.load("client:auth2", initClient);
     }
@@ -44,28 +38,31 @@
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES
       }).then(() => {
-        let authInstance = gapi.auth2.getAuthInstance();
-
-        // Botão de login
-        authorizeButton.onclick = () => authInstance.signIn().then(() => {
-          console.log("Usuário logado:", authInstance.currentUser.get().getBasicProfile().getEmail());
-        });
-
-        // Botão de logout
-        signoutButton.onclick = () => authInstance.signOut();
-
-        // Formulário de criação de evento
         document.getElementById("eventForm").addEventListener("submit", addEvent);
       });
     }
 
-    // Função para adicionar evento ao Google Calendar
-    function addEvent(e) {
+    async function addEvent(e) {
       e.preventDefault();
+      let authInstance = gapi.auth2.getAuthInstance();
+
+      // Se não estiver logado, faz login primeiro
+      if (!authInstance.isSignedIn.get()) {
+        await authInstance.signIn();
+      }
+
+      // Evento com lembretes configurados
       let event = {
         summary: document.getElementById("eventTitle").value,
         start: { dateTime: document.getElementById("startTime").value },
-        end: { dateTime: document.getElementById("endTime").value }
+        end: { dateTime: document.getElementById("endTime").value },
+        reminders: {
+          useDefault: false,
+          overrides: [
+            { method: "popup", minutes: 10 }, // alerta 10 min antes
+            { method: "email", minutes: 30 }  // email 30 min antes
+          ]
+        }
       };
 
       gapi.client.calendar.events.insert({
